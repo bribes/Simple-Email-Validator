@@ -1,0 +1,12 @@
+.bold {
+     font-weight: 500;
+}
+ .thin {
+     font-weight: 200;
+}
+ .right {
+     float: right;
+}
+ .br4 {
+     border-radius: 4px;
+}
