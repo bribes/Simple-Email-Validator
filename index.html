@@ -16,7 +16,7 @@
 	for (var i = 0; i < vars.length; i++) {
 		var pair = vars[i].split("=");
 		if (pair[0] == 'email') {
-			var email = decodeURIComponent(pair[1].split('+').join('%20'));
+			var email = pair[1];
 			return email;
 		}
 		return "";
