@@ -16,13 +16,13 @@
 	for (var i = 0; i < vars.length; i++) {
 		var pair = vars[i].split("=");
 		if (pair[0] == 'email') {
-			var email = pair[1];
+			var email = decodeURIComponent(pair[1]);
 			return email;
 		}
 		return "";
 	}
 }
-		document.getElementById('email').innerText = getEmail();
+		document.getElementById('email').innerHTML = getEmail();
 	</script>
 <body>
 	<center>
