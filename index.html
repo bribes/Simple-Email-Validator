@@ -1,0 +1,12 @@
+<script>
+function emailValidate() {
+var email = document.getElementById('email').value;
+  if (/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(email) === true) {
+      console.log('Valid');
+      }else {
+      console.log('NonValid');
+      }
+}
+</script>
+<input id="email" type="text">
+<button onclick="emailValidate()">Submit</button>
